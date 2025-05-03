@@ -196,3 +196,432 @@
   .tools-card-desc{
     color: var(--header-list-color);
   }
+
+
+
+
+
+
+
+
+
+
+
+ /* ===================== СЕКЦИЯ: NT Section (Начало) ===================== */
+ .newcomer-tools {
+  background-color: var(--bg-color);
+  color: var(--logo-color);
+  padding: 60px 20px;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.newcomer-tools-container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.newcomer-tools-title {
+  font-size: 32px;
+  font-weight: 600;
+  margin-bottom: 10px;
+  color: var(--logo-color);
+}
+
+.newcomer-tools-description {
+  font-size: 16px;
+  color: var(--header-list-color);
+  margin-bottom: 30px;
+  max-width: 500px;
+}
+
+.explore-more-button {
+  background-color: var(--button-color);
+  color: var(--button-color-text);
+  padding: 12px 24px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: 500;
+  margin-top: 20px;
+  transition: background 0.3s;
+}
+
+.explore-more-button:hover {
+  background-color: rgba(255, 110, 48, 0.85);
+}
+
+.tools-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 24px;
+  margin-bottom: 30px;
+  list-style: none;
+  padding: 0;
+}
+
+.tool-card {
+  background-color: rgba(255, 255, 255, 0.05);
+  border-radius: 12px;
+  padding: 20px;
+  position: relative;
+  transition: box-shadow 0.3s;
+}
+
+.tool-card:hover {
+  box-shadow: 0 0 15px rgba(255, 255, 255, 0.08);
+}
+
+.tool-card:nth-child(2) {
+  background: linear-gradient(135deg, rgba(255, 255, 255, 0.05), rgba(255, 255, 255, 0.1));
+  border: 1px solid var(--input-gradient-color1);
+}
+
+.tool-image {
+  width: 48px;
+  height: 48px;
+  margin-bottom: 12px;
+}
+
+.tool-name {
+  font-size: 18px;
+  margin: 0;
+  color: var(--logo-color);
+}
+
+.tool-price {
+  font-size: 14px;
+  color: var(--tools-color-wraper);
+  font-weight: 500;
+}
+
+.tool-description {
+  font-size: 14px;
+  color: var(--header-list-color);
+  margin: 10px 0 16px;
+}
+
+.card-actions {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.tool-action-link img {
+  width: 20px;
+  margin-right: 10px;
+  opacity: 0.8;
+}
+
+.visit-button {
+  background-color: var(--button-color);
+  color: var(--button-color-text);
+  padding: 8px 16px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.visit-button:hover {
+  background-color: rgba(255, 110, 48, 0.85);
+}
+/* ===================== СЕКЦИЯ: NT Section (Конец) ===================== */
+
+/* ===================== СЕКЦИЯ: RR Section (Начало) ===================== */
+.testimonials {
+  background-color: var(--bg-color);
+  color: var(--logo-color);
+  padding: 80px 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  position: relative;
+}
+
+.testimonial-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.testimonial-card {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.testimonial-content {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+  position: relative;
+}
+
+.testimonial-photo {
+  width: 240px;
+  height: auto;
+  border-radius: 10px;
+  z-index: 2;
+}
+
+.testimonial-bg {
+  position: absolute;
+  left: 0;
+  z-index: 1;
+  width: 280px;
+  opacity: 0.4;
+}
+
+.testimonial-text {
+  max-width: 560px;
+  position: relative;
+}
+
+.quotes-photo {
+  position: absolute;
+  top: -30px;
+  left: -40px;
+  width: 40px;
+  opacity: 0.2;
+}
+
+.testimonial-name {
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 4px;
+  color: var(--logo-color);
+}
+
+.testimonial-text-content {
+  font-size: 16px;
+  line-height: 1.6;
+  color: var(--header-list-color);
+}
+
+.testimonial-controls {
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  position: absolute;
+  width: 100%;
+  top: 50%;
+  transform: translateY(-50%);
+  padding: 0 20px;
+  pointer-events: none;
+}
+
+.testimonial-control-link {
+  pointer-events: all;
+}
+
+.testimonial-arrow-right {
+  width: 24px;
+  height: 24px;
+  opacity: 0.5;
+  transition: opacity 0.3s ease;
+}
+.testimonial-arrow-left {
+  width: 24px;
+  height: 24px;
+  opacity: 0.5;
+  transition: opacity 0.3s ease;
+  transform: rotate(180deg); /* Поворачиваем стрелку */
+}
+
+.testimonial-arrow-left:hover,
+.testimonial-arrow-right:hover {
+  opacity: 1;
+}
+
+.testimonial-thumbnails {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  margin-top: 40px;
+  gap: 12px;
+}
+
+.testimonial-thumbnail {
+  width: 32px;
+  height: 8px;
+  opacity: 0.5;
+  transition: opacity 0.3s ease;
+}
+
+.testimonial-thumbnail-item:first-child .testimonial-thumbnail {
+  opacity: 1;
+}
+
+/* ===================== СЕКЦИЯ: RR Section (Конец) ===================== */
+
+/* ===================== СЕКЦИЯ: Promotion Section (Начало) ===================== */
+.contributor {
+  background-color: var(--bg-color);
+  padding: 80px 20px;
+  text-align: center;
+}
+
+.contributor-title {
+  font-size: 32px;
+  font-weight: 600;
+  color: var(--logo-color);
+  margin-bottom: 16px;
+}
+
+.contributor-description {
+  font-size: 16px;
+  color: var(--header-list-color);
+  margin-bottom: 40px;
+  line-height: 1.5;
+}
+
+.contributor-form-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.form-elements {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--input-gradient-color1);
+  border-radius: 12px;
+  overflow: hidden;
+  max-width: 400px;
+  margin: 0 auto;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.email-input {
+  padding: 14px 16px;
+  border: none;
+  outline: none;
+  font-size: 14px;
+  flex: 1;
+  min-width: 220px;
+  background-color: var(--input-gradient-color1);
+  color: var(--logo-color);
+  border-top-left-radius: 12px;
+  border-bottom-left-radius: 12px;
+}
+
+.email-input::placeholder {
+  color: var(--input-color);
+}
+
+.join-button {
+  background-color: var(--button-color);
+  color: var(--button-color-text);
+  padding: 14px 24px;
+  font-size: 14px;
+  font-weight: 600;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  border-top-right-radius: 12px;
+  border-bottom-right-radius: 12px;
+}
+
+.join-button:hover {
+  background-color: #ff7a26;
+}
+
+/* ===================== СЕКЦИЯ: Promotion Section (Конец) ===================== */
+
+/* ===================== СЕКЦИЯ: Footer (Начало) ===================== */
+.footer {
+  background-color: var(--bg-color);
+  padding: 60px 20px;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.footer-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 40px;
+  align-items: flex-start;
+}
+
+.footer-logo {
+  display: flex;
+  align-items: center;
+  font-size: 20px;
+  font-weight: 700;
+  color: var(--logo-color);
+  text-decoration: none;
+  margin-bottom: 20px;
+}
+
+.footer-logo-img {
+  width: 38px;
+  height: 38px;
+  margin-right: 10px;
+}
+
+.footer-logo-description {
+  max-width: 280px;
+  margin-bottom: 40px;
+}
+
+.footer-logo-description p {
+  font-size: 14px;
+  line-height: 1.6;
+  color: var(--header-list-color);
+}
+
+.footer-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-column {
+  min-width: 160px;
+}
+
+.footer-column-title {
+  font-size: 16px;
+  font-weight: 600;
+  color: var(--logo-color);
+  margin-bottom: 16px;
+}
+
+.footer-contact-list,
+.footer-categories-list,
+.footer-company-info-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-contact-item,
+.footer-category-item,
+.footer-company-info-item {
+  font-size: 14px;
+  color: var(--header-list-color);
+  line-height: 2;
+}
+
+.footer-category-item a,
+.footer-company-info-item a {
+  text-decoration: none;
+  color: var(--header-list-color);
+  transition: color 0.3s ease;
+}
+
+.footer-category-item a:hover,
+.footer-company-info-item a:hover {
+  color: var(--button-color);
+}
+
+/* ===================== СЕКЦИЯ: Footer (Конец) ===================== */
