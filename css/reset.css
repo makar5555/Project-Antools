@@ -1,3 +1,4 @@
+/*RESET-NORMALIZE BY MAKAR*/
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -23,11 +24,21 @@ article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
 	display: block;
 }
+* {
+	box-sizing: border-box;
+}
+.container {
+	width: 1200px;
+	margin: 0 auto;
+}
 body {
 	line-height: 1;
 }
 ol, ul {
 	list-style: none;
+}
+a {
+	text-decoration: none;
 }
 blockquote, q {
 	quotes: none;
